@@ -52,25 +52,11 @@ def install_pkg_antix (name1, name2, url):
 
 # Install yad
 install_pkg_antix ('yad', chr(45) + '1_i386.deb', 'http://debs.slavino.sk/pool/main/y/yad/')
-
-# Install advert-block-antix
-install_pkg_antix ('advert-block-antix', '.deb', 'http://www.daveserver.info/antiX/main/')
-
-# Install ceni
-install_pkg_antix ('ceni', '.deb', 'http://www.daveserver.info/antiX/main/')
 	
-src = dir_develop + '/ui-config-network/usr_local_bin/config-network.sh'
-dest = '/usr/local/bin/config-network.sh'
+src = dir_develop + '/ui-config-info/usr_local_bin/config-info.sh'
+dest = '/usr/local/bin/config-info.sh'
 shutil.copyfile (src, dest)
 os.system ('chmod a+rx ' + dest)
-
-# dir1 = dir_develop+'/ui-menu/usr_local_bin'
-# dir2 = '/usr/local/bin'
-
-# copy_to_dir ('config-swiftlinux.sh')
-# copy_to_dir ('config-network.sh')
-# copy_to_dir ('get-apps.sh')
-# copy_to_dir ('use-apps.sh')
 
 print 'FINISHED ADDING NETWORK CONFIGURATION SCRIPTS'
 print '============================================='
