@@ -26,8 +26,8 @@ else:
 
 # THIS IS THE SCRIPT FOR ADDING THE SWIFT LINUX CONFIGURATION SCRIPTS
 
-print '======================================================'
-print 'BEGIN ADDING SWIFT LINUX NETWORK CONFIGURATION SCRIPTS'
+print '======================================'
+print 'BEGIN ADDING SYSTEM INFORMATION WIZARD'
 
 import shutil, subprocess
 
@@ -58,5 +58,5 @@ dest = '/usr/local/bin/config-info.sh'
 shutil.copyfile (src, dest)
 os.system ('chmod a+rx ' + dest)
 
-print 'FINISHED ADDING NETWORK CONFIGURATION SCRIPTS'
-print '============================================='
+print 'FINISHED ADDING ADDING SYSTEM INFORMATION WIZARD'
+print '================================================'
