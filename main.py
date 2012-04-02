@@ -49,12 +49,9 @@ def install_pkg_antix (name1, name2, url):
         os.system (wget_command)
         os.system ('dpkg -i ' + deb_file)
         os.system ('rm ' + deb_file)
-
-# Install yad
-install_pkg_antix ('yad', chr(45) + '1_i386.deb', 'http://debs.slavino.sk/pool/main/y/yad/')
 	
-src = dir_develop + '/ui-config-info/usr_local_bin/config-info.sh'
-dest = '/usr/local/bin/config-info.sh'
+src = dir_develop + '/ui-config-info/usr_local_bin/config-info.py'
+dest = '/usr/local/bin/config-info.py'
 shutil.copyfile (src, dest)
 os.system ('chmod a+rx ' + dest)
 
