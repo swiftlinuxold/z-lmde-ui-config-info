@@ -55,5 +55,9 @@ dest = '/usr/local/bin/config-info.py'
 shutil.copyfile (src, dest)
 os.system ('chmod a+rx ' + dest)
 
+src = dir_develop + '/ui-config-info/usr_share_applications/config-info.desktop'
+dest = '/usr/share/applications/config-info.desktop'
+shutil.copyfile (src, dest)
+
 print 'FINISHED ADDING ADDING SYSTEM INFORMATION WIZARD'
 print '================================================'
